@@ -31,12 +31,13 @@ body{
         padding: v.$font-size-xl;
         background-color: v.$color-white;
         font-weight: 500;
+        text-align: center;
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
         row-gap: v.$font-size-m;
         margin-bottom: v.$font-size-xl;
+        line-height: v.$font-size-xl;
     }
       &-list{
         letter-spacing: 0.1rem;
@@ -49,7 +50,7 @@ body{
       }
      
       & li{
-        background-color: rgb(252, 252, 221);
+        background-color: rgb(254, 254, 219);
         margin: v.$font-size-m;
         padding: v.$font-size-m;   
       }
@@ -81,11 +82,20 @@ body{
   padding:v.$font-size-xxl;
 }
 .quiz{
-background-color:v.$color-primary;
-&-header{
-  
-  
-}
+   background-color:v.$color-primary;
+ &-header{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+  }
+  & li{
+    margin: v.$font-size-s;
+    padding: v.$font-size-s;   
+  }
+  & li:hover{
+    background-color: v.$color-hover;
+    text-transform: uppercase;
+  }
 }
 
 
