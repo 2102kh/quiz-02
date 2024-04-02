@@ -1,0 +1,13 @@
+export const questions = [
+    {
+        question:"Vilket språk körs i weblässaren?",
+        answer:["Java", "C", "Python", "JavaScript"],
+        correct: 4,
+    },
+    {
+        question:"Vad står CSS för?",
+        answer:["Central Style Sheets","Cascading Style Sheets","CascadingSimple Sheets","Cars Suvs Sailboats"],
+        correct:2,
+    }
+]
+console.log(questions)
