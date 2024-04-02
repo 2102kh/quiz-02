@@ -118,4 +118,35 @@ function showResultat(){
  `;
 
 
-}
+ let title,message;
+
+
+ if(score === questions.length){
+  title = 'Congratulations🎉 You are the King!';
+  message = 'You answered all the questions👏'
+ }else if((score*100) / questions.length >= 50) {
+  title = 'Good result!😇';
+  message ='You answered more than half of the questions correctly👍🏼'
+ }else{
+  title ='Try again!😐'
+  message = 'So far you have less then half of the correct answers'
+ }
+ //result
+ let result =`Your score: ${score} from ${questions.length}`;
+ console.log(result)
+
+
+ const finalMessage = resultTemplate
+    .replace('%title%', title)
+    .replace('%message%', message)
+    .replace('%result%', result)
+
+
+    headerContainer.innerHTML = finalMessage;
+    //ändrar knappen till 'spela igen'
+    submitBtn.blur();
+    submitBtn.innerText = 'Start again!';
+    submitBtn.onclick = function(){
+      history.go()
+    }
+ }
