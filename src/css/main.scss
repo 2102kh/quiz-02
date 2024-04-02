@@ -1,0 +1,49 @@
+@use "./variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap");
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: v.$font-sans;
+}
+body{
+    // background-image: url(../images/ellipse-7980694_1280.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position-y:center;
+    background-color: v.$color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quiz{
+    background-color: rgb(194, 197, 236);
+    padding: v.$font-size-xl;
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+
+      &-header{
+        padding: v.$font-size-xl;
+        background-color: v.$color-white;
+        font-weight: 600;
+    }
+      &-list{
+        padding: v.$font-size-xl;
+        letter-spacing: 0.1rem;
+        list-style: none;
+        line-height: v.$font-size-xl;
+      }
+      
+}
+.submit{
+  padding: v.$font-size-m;
+  background-color: v.$color-secondary;
+  border-radius:v.$font-size-m;
+  border-style: none;
+  text-transform: uppercase;
+  letter-spacing:0.2rem;
+  font-weight: 500;
+ }
