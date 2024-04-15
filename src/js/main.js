@@ -19,8 +19,16 @@ const questions = [
   question:"Who was the first woman to win a Nobel Prize?",
   answer:["Marie Curie","Jane Goodall","Rosa Parks","Mother Teresa"],
   correct:1,
+},
+{
+  question:"In what year was the first moon landing?",
+  answer:["1963","1969","2001","1935"],
+  correct: 2,
 }
 ]
+
+
+
 
 const quiz = document.querySelector('#quiz') 
 const headerContainer = document.querySelector('#header');
