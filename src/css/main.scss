@@ -10,8 +10,7 @@ font-family: swap;
 }
 body{
   overflow: hidden;
-    background-image: url(../images/back-to-school-5750661_1280.jpg);
-    // background-repeat: no-repeat;
+     background-image: url(../images/back-to-school-5750661_1280.jpg);
      background-size: cover;
     background-position-y:center;
     // background-color: v.$color-primary;
@@ -20,7 +19,7 @@ body{
     margin-top: 5vh;
     align-items: center;
     justify-content: center;
-    // height: 100vh;
+    height: 100vh;
 }
 .quiz{
     background-color:v.$color-hover-main;
@@ -32,7 +31,7 @@ body{
       &-header{
         padding: v.$font-size-xl;
         background-color: v.$color-white;
-        font-weight: 500;
+        // font-weight: 500;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -53,7 +52,7 @@ body{
       }
      
       & li{
-        background-color:rgb(249, 252, 185);
+        background-color:rgb(245, 247, 206);
         margin: v.$font-size-m;
         padding: v.$font-size-m;   
       }
@@ -70,7 +69,7 @@ h1{
  
 }
 .submit{
-  padding: v.$font-size-m;
+  padding: v.$font-size-s;
   background-color: v.$color-hover;
   color: v.$color-black;
   border-radius:v.$font-size-m;
@@ -86,27 +85,52 @@ h1{
   }
  }
 
- @media (max-width:780px){
-body{
-  padding:v.$font-size-xxl;
+ @media (max-width:580px){
+
+ body{
+    background-image: none;
+    background-color: v.$color-primary;
+    height: 100vh;
 }
 .quiz{
-   
- &-header{
-   display: flex;
-   justify-content: center;
-   align-items: center; 
-  }
-  & li{
-    margin: v.$font-size-s;
-    padding: v.$font-size-s;   
-  }
-  & li:hover{
-    background-color: v.$color-hover;
-    text-transform: uppercase;
-  }
+    background-color:v.$color-hover-main;
+    padding:v.$font-size-xs;
+    margin:v.$font-size-s;
+      &-header{
+        padding: v.$font-size-l;
+        background-color: v.$color-white;
+        font-weight:10px;
+        
+        margin-bottom: v.$font-size-xl;
+        margin-top: v.$font-size-xl;
+        line-height: v.$font-size-xl;
+       
+    }
+      &-list{
+        
+        text-transform: none; 
+      }
+      &-list .answer{
+        width:1.5rem;
+      }
+     
+      & li{
+        background-color:rgb(250, 252, 196);
+        margin: v.$font-size-m;
+        padding: v.$font-size-s;   
+      }
+      & li:hover{
+       
+        text-transform:none;
+      }
+      
 }
-
+h1{
+  color:v.$color-black;
+  font-size: 0.6rem;
 
 }
- 
+.submit{
+  margin-bottom: v.$font-size-xl;
+  }
+ }

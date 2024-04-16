@@ -90,8 +90,6 @@ const checkRadio = listContainer.querySelector('input:checked');//eftersom det √
 
 //om svar har inte vald vi g√• ut
 if(!checkRadio){
-  listTemplate.style.color = "pink"
-
   submitBtn.blur()
   return
 }
